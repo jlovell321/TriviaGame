@@ -1,0 +1,35 @@
+body {
+	background-image: url("../images/whale.jpg");
+}
+
+h1{
+	font: ariel;
+	background-color: #00CED1;
+	font-size: 60px;
+}
+
+div.displayTheAnswer, div.questionClass, div.answerArray, div.questionTimer, div.startOver{
+	background-color: #00CED1; 
+	text-align: center;
+	font: ariel;
+	padding: 10px 10px 10px 30px;
+	font-size: 30px;
+}
+
+div.questionTimer{
+	font: helvetica;
+	font-weight: bold;
+	font-size:100px;
+	padding: 10px 10px 10px 30px;
+}
+
+div.answerArray:hover{
+	background-color:white;
+	cursor: pointer;
+}
+
+div.playAgain:hover{
+	background-color:darkblue;
+	
+}
+
