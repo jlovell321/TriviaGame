@@ -33,7 +33,7 @@ var questionIndex = 0;
 var intervalIDArray = [];
 var losses = 0;
 var wins = 0;
-var openTagQTimer = "<div class='col-md-10 questionTimer'>";
+var openTagQTimer = "<div class='col-md-12 questionTimer'>";
 
 function startGame(){
 	questionBank= [q1, q2, q3, q4, q5,];
@@ -92,11 +92,9 @@ function showQuestion(){
 function decrement(inputValue){
 	var timer = parseInt(inputValue);
 	timer--;
-	if(timer<=5){
-		$("#qtimer").html(openTagQTimer	+"<span style='color:darkblue;'>"+timer+" seconds</span>"+"</div>");
-	} else {
+	if(timer<=10){
 		$("#qtimer").html(openTagQTimer	+timer+" seconds"+"</div>");
-	}
+	} 
 
 	return timer;
 }
